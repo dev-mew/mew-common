@@ -56,7 +56,7 @@ func (no *NewOrder) CalcValues(vat int32) {
 	}
 }
 
-type SaveOrders struct {
+type SavedOrders struct {
 	Data []SaveOrderData `json:"data,omitempty"`
 }
 
@@ -106,4 +106,9 @@ type InvoiceItem struct {
 	Description string `json:"description,omitempty"`
 	UnitAmount  int32  `json:"unitAmount"`
 	Quantity    int32  `json:"quantity"`
+}
+
+type ReqCustomerOrders struct {
+	JWT        string `json:"jwt"`
+	CustomerID int    `json:"customerID"`
 }
