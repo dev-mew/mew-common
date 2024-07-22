@@ -57,14 +57,14 @@ func (no *NewOrder) CalcValues(vat int32) {
 }
 
 type SavedOrders struct {
-	Data []SaveOrderData `json:"data,omitempty"`
+	Data []SavedOrderData `json:"data,omitempty"`
 }
 
 type SavedOrder struct {
-	Data SaveOrderData `json:"data,omitempty"`
+	Data SavedOrderData `json:"data,omitempty"`
 }
 
-type SaveOrderData struct {
+type SavedOrderData struct {
 	ID         int            `json:"id,omitempty"`
 	Attributes SavedOrderAttr `json:"attributes,omitempty"`
 }
