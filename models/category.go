@@ -25,7 +25,7 @@ type CategoryAttr struct {
 	ImageWide Img                 `json:"imageWide,omitempty"`
 	Products  ShortProducts       `json:"products,omitempty"`
 	Blocks    []Block             `json:"blocks,omitempty"`
-	Metadata  MetaInfo            `json:"metadata"`
+	Metadata  MetaData            `json:"metadata"`
 }
 
 type ReqFilterCategoryProducts struct {
