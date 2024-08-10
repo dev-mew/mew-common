@@ -16,6 +16,8 @@ type ImgData struct {
 type ImgAttr struct {
 	AlternativeText string     `json:"alternativeText,omitempty"`
 	URL             string     `json:"url,omitempty"`
+	Width           int        `json:"width,omitempty"`
+	Height          int        `json:"height,omitempty"`
 	Formats         ImgFormats `json:"formats,omitempty"`
 }
 
