@@ -76,3 +76,17 @@ type ProdFields struct {
 	Sku  string `json:"sku"`
 	Slug string `json:"slug"`
 }
+
+type ProdPriceOnly struct {
+	Data ProdPriceOnlyData `json:"data,omitempty"`
+}
+
+type ProdPriceOnlyData struct {
+	ID         *int              `json:"id,omitempty"`
+	Attributes ProdPriceOnlyAttr `json:"attributes,omitempty"`
+}
+
+type ProdPriceOnlyAttr struct {
+	PriceInCents int32 `json:"priceInCents,omitempty"`
+	Discount     int32 `json:"discount,omitempty"`
+}
